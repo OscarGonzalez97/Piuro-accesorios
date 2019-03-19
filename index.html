@@ -12,6 +12,7 @@
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="css/main.css">
+    <!--  -->
   </head>
   <body>
 
@@ -99,20 +100,21 @@
       <div class="container">
         <div class="row">
           <div class="col-md-5">
-            <form class="card mt-4">
+            <form action="contacto.php" class="card mt-4" method="post">
               <div class="card-body">
                 <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Name">
+                  <input type="text" class="form-control" placeholder="Name" name="name">
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Email">
+                  <input type="text" class="form-control" placeholder="Email" name="email">
                 </div>
                 <div class="form-group">
-                  <textarea cols="30" rows="10" placeholder="Message" class="form-control"></textarea>
+                  <textarea name="mensaje" cols="30" rows="10" placeholder="Message" class="form-control"></textarea>
                 </div>
-                <button class="btn btn-outline-secondary btn-block">
+                <!--<button class="btn btn-outline-secondary btn-block">
                   Send
-                </button>
+                </button>-->
+                <input type="submit" name="button" value="Enviar" id="button">
               </div>
             </form>
           </div>
